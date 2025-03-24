@@ -1,0 +1,173 @@
+type Glasses = 'Feautured' | 'Recommended';
+
+interface EyeWear {
+    name: string,
+    brand: string,
+    type: Glasses,
+    price: number,
+    size: '28mm' | '36mm' | '42mm',
+    img: string,
+    // colors: {
+    //     black: string,
+    //     pink: string,
+    //     blue: string,
+    //     brown: string,
+    //     red: string,
+    //     green: string,
+    //     orange: string,
+    // },
+
+}
+
+let selectedSize = '28mm' as '28mm' | '36mm' | '42mm';
+
+export const eyeWears: EyeWear[] = [
+    // Feautured (9 объектов)
+    {
+      name: "Solaris",
+      brand: "RayLux",
+      type: "Feautured",
+      price: 140,
+      size: selectedSize,
+      img: "/images/1.png",
+    },
+    {
+      name: "VisionPro",
+      brand: "OptiMax",
+      type: "Feautured",
+      price: 145,
+      size: selectedSize,
+      img: "/images/2.png",
+    },
+    {
+      name: "Aurora",
+      brand: "SunSight",
+      type: "Feautured",
+      price: 150,
+      size: selectedSize,
+      img: "/images/3.png",
+    },
+    {
+      name: "Eclipse",
+      brand: "Lumiere",
+      type: "Feautured",
+      price: 170,
+      size: selectedSize,
+      img: "/images/4.png",
+    },
+    {
+      name: "Stellar",
+      brand: "Galactic",
+      type: "Feautured",
+      price: 78,
+      size: selectedSize,
+      img: "/images/5.png",
+    },
+    {
+      name: "Nova",
+      brand: "Celeste",
+      type: "Feautured",
+      price: 129,
+      size: selectedSize,
+      img: "/images/6.png",
+    },
+    {
+      name: "Cosmo",
+      brand: "Orbitz",
+      type: "Feautured",
+      price: 80,
+      size: selectedSize,
+      img: "/images/7.png",
+    },
+    {
+      name: "Lunaris",
+      brand: "MoonBeam",
+      type: "Feautured",
+      price: 140,
+      size: selectedSize,
+      img: "/images/8.png",
+    },
+    {
+      name: "Spectrum",
+      brand: "Prism",
+      type: "Feautured",
+      price: 155,
+      size: selectedSize,
+      img: "/images/1.png",
+    },
+  
+    // Recommended (9 объектов)
+    {
+      name: "Retro",
+      brand: "Vintage Optics",
+      type: "Recommended",
+      price: 160,
+      size: selectedSize,
+      img: "/images/2.png",
+    },
+    {
+      name: "Modernist",
+      brand: "UrbanLook",
+      type: "Recommended",
+      price: 165,
+      size: selectedSize,
+      img: "/images/3.png",
+    },
+    {
+      name: "Classic",
+      brand: "Timeless",
+      type: "Recommended",
+      price: 170,
+      size: selectedSize,
+      img: "/images/4.png",
+    },
+    {
+      name: "Minimal",
+      brand: "SleekDesign",
+      type: "Recommended",
+      price: 175,
+      size: selectedSize,
+      img: "/images/5.png",
+    },
+    {
+      name: "Avant",
+      brand: "EdgeWear",
+      type: "Recommended",
+      price: 180,
+      size: selectedSize,
+      img: "/images/6.png",
+    },
+    {
+      name: "Dynamo",
+      brand: "Motion",
+      type: "Recommended",
+      price: 185,
+      size: selectedSize,
+      img: "/images/7.png",
+    },
+    {
+      name: "Fusion",
+      brand: "BlendTech",
+      type: "Recommended",
+      price: 190,
+      size: selectedSize,
+      img: "/images/8.png",
+    },
+    {
+      name: "Zenith",
+      brand: "PeakView",
+      type: "Recommended",
+      price: 195,
+      size: selectedSize,
+      img: "/images/1.png",
+    },
+    {
+      name: "AuroraX",
+      brand: "StellarVision",
+      type: "Recommended",
+      price: 200,
+      size: selectedSize,
+      img: "/images/2.png",
+    },
+  ];
+  

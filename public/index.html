@@ -1,11 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Salinaka</title>
+  <link rel="stylesheet" href="/dist/index.css">
 </head>
-<body>
-  
+
+<body class="bg-[#f8f8f8]">
+  <header class="mx-auto py-4 flex justify-between items-center fixed top-0 w-full px-14 bg-white shadow-md mb-20">
+    <div class="flex gap-10 items-center">
+      <a href="index.html">
+        <img src="/images/logo.png" alt="logo">
+      </a>
+      <ul class="flex gap-4 items-center">
+        <li class="cursor-pointer text-gray-500 transition-all duration-300 hover:text-gray-800 scale-90 active-page" id="home-link">
+          Home
+        </li>
+        <li class="cursor-pointer text-gray-500 transition-all duration-300 hover:text-gray-800 scale-90" id="shop-link">
+          Shop
+        </li>
+        <li class="cursor-pointer text-gray-500 transition-all duration-300 hover:text-gray-800 scale-90" id="featured-link">
+          Feautured
+        </li>
+        <li class="cursor-pointer text-gray-500 transition-all duration-300 hover:text-gray-800 scale-90" id="recommended-link">
+          Recommended
+        </li>
+      </ul>
+    </div>
+    <div class="flex gap-8 items-center">
+      <div class="flex items-center border rounded-md p-2 w-96">
+        <div class="flex items-center px-2 text-gray-400">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </div>
+        <input type="text" placeholder="Search product..." class="ml-2 w-full outline-none text-gray-500">
+      </div>
+      <div class="flex items-center px-2 text-gray-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <path d="M6 2L3 6v13a1 1 0 001 1h16a1 1 0 001-1V6l-3-4H6z"></path>
+          <path d="M3 6h18"></path>
+          <path d="M16 10a4 4 0 11-8 0"></path>
+        </svg>
+      </div>
+      <div class="flex gap-3 items-center">
+        <button class="py-2 px-4 border border-black bg-black text-white rounded-[3px] hover:bg-gray-800">
+          Sign Up
+        </button>
+        <button class="py-2 px-4 border border-gray-400 bg-gray-300 text-black rounded-[3px] hover:bg-gray-400">
+          Sign In
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HOME PAGE -->
+  <div id="home-page" class="w-[85%] mt-40 mx-auto">
+    <div class="bg-[#ededed] bg-[url('/images/main-hero.png')] bg-contain bg-no-repeat bg-right mb-20">
+      <div class=" p-[50px]">
+        <h1 class="text-[48px] font-normal">
+          <span class="font-medium">See</span> everything <br> with <span class="font-medium">Clarity</span>
+        </h1>
+        <p class="font-medium text-gray-600 my-5">
+          Buying eyewear should leave you happy and good-looking, with money in your <br> pocket. Glasses, sunglasses,
+          and
+          contacts—we've got your eyes covered.
+        </p>
+        <button
+          class="flex items-center gap-2 border border-black bg-black text-white p-3 leading-3 rounded-md transition duration-300 ease-in-out hover:bg-gray-800 hover:text-white hover:scale-105">
+          Shop Now
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            class="h-5 w-5 mt-0.5">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16m-6-6l6 6-6 6" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+    <div>
+      <div class="flex justify-between items-center">
+        <h2 class="text-3xl font-medium">
+          Featured Products
+        </h2>
+        <button class="text-xl underline text-gray-500">See All</button>
+      </div>
+      <div id="featured-section" class="pb-[102px] grid grid-cols-3 gap-4 my-10">
+      </div>
+    </div>
+    <div>
+      <div class="flex justify-between items-center">
+        <h2 class="text-3xl font-medium">
+          Recommended Products
+        </h2>
+        <button class="text-xl underline text-gray-500">See All</button>
+      </div>
+      <div id="recommend-section" class="pb-[102px] grid grid-cols-3 gap-4 my-10">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SHOP PAGE -->
+  <div id="shop-page" class="w-[85%] mt-40 mx-auto grid grid-cols-4 gap-3 my-20">
+
+  </div>
+
+  <!-- FEATURED PAGE -->
+   <!-- <div id="featured-page" class="w-[85%] mt-40 mx-auto">
+    <div class="bg-[#ededed] bg-[url('/images/featured-bg.png py-32')] bg-contain bg-no-repeat bg-right mb-20">
+        <h1 class="text-[48px] font-normal">
+          Featured Products
+        </h1>
+    </div>
+   </div> -->
+
+  <footer class="bg-[#efefef] p-14 flex flex-col gap-4 justify-center items-center">
+    <a href="index.html">
+      <img src="/images/logo.png" alt="logo">
+    </a>
+    <p class="font-semibold text-xs text-gray-500">@ 2025</p>
+  </footer>
+
+
+  <script src="/dist/index.js"></script>
 </body>
+
 </html>

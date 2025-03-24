@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active-page{
+    @apply text-black;
+}
+
+.disable-page{
+    @apply none;
+}
